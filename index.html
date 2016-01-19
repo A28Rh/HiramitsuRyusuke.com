@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hiramitsu Ryusuke.com</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/material.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <!--<script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="js/jquery.animate-colors-min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/material.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- ビューポートの設定 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+
+    <div id="modal-overlay"></div>
+
+    <div class="modal-like modal-contents modal-green" style="display:none;">
+      <h3>Like</h3>
+        <div class="modal-text modal-like-text">
+          <div class="items-container">
+            <div class="col-xs-6 col-sm-6 col-md-3 like-item">
+              <img src="images/cheese.png" alt="cheese"><br>
+              大好物のチーズ。種類に詳しくはないがとにかくチーズが好き。有名なチーズ店に行きたい。
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 like-item">
+              <img src="images/laptop.png" alt="laptop"><br>
+              大学3年の夏にWindowsからMacへ乗り換え。UI/UX、デザインの良さに惹かれ、以降Macの虜に。
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 like-item">
+              <img src="images/home.png" alt="home"><br>
+              下北沢に越してきて1年になるが渋谷に自転車で向かえる距離であって生活は快適。お気に入りのマイタウン。
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 like-item">
+              <img src="images/coat.png" alt="coat"><br>
+              STUDIOUSで購入したトレンチコートがお気に入り。大人な雰囲気漂うシルエットは、童顔な僕を大人にしてくれる。
+            </div>
+          </div>
+
+          <div class="items-container">
+            <div class="col-xs-6 col-sm-6 col-md-3 like-item">
+              <img src="images/backpack.png" alt="backpack"><br>
+              現在の愛用backpackはincaseのconpact city backpack。愛用機があっても常に店内でbackpackを探すほど好んでいる。
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 like-item">
+              <img src="images/cafe.png" alt="cafe"><br>
+              カフェで作業をするのが大好きな僕が特に好んでいるのが新宿のCaffice。おしゃれで落ち着いた店内はまさにCafe+Office。
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 like-item">
+              <img src="images/shoes.png" alt="shoes"><br>
+              マイカラーは赤。そしてそのマイカラーを表す一番のPointがスニーカー。次に狙うはソールも赤のオールレッドスニーカー。
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 like-item">
+              <img src="images/amazon.png" alt="amazon"><br>
+              ひらみつのwish listは<br><a href="http://www.amazon.co.jp/registry/wishlist/184RHNNUYT5Z3" class="wishlist">こちら！</a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <p><a class="modal-button-close">close</a></p>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal-skill modal-contents modal-blue" style="display:none;">
+      <h3>Skill</h3>
+      <p class="modal-text modal-skill-text"></p>
+      <p><a class="modal-button-close">close</a></p>
+    </div>
+    <div class="modal-strength modal-contents modal-orange" style="display:none;">
+      <h3>Strength</h3>
+      <p class="modal-text modal-strength-text"></p>
+      <p><a class="modal-button-close">close</a></p>
+    </div>
+    <div class="modal-character modal-contents modal-character modal-pink" style="display:none;">
+      <h3>Character</h3>
+      <p class="modal-text modal-character-text"></p>
+      <p><a class="modal-button-close">close</a></p>
+    </div>
+    <div class="modal-hobby modal-contents modal-pink" style="display:none;">
+      <h3>Hobby</h3>
+      <p class="modal-text modal-hobby-text"></p>
+      <p><a class="modal-button-close">close</a></p>
+    </div>
+    <div class="modal-dream modal-contents modal-orange" style="display:none;">
+      <h3>Dream</h3>
+      <p class="modal-text modal-dream-text"></p>
+      <p><a class="modal-button-close">close</a></p>
+    </div>
+    <div class="modal-blog modal-contents modal-blue" style="display:none;">
+      <h3>Blog</h3>
+      <p class="modal-text modal-blog-text"></p>
+      <p><a class="modal-button-close">close</a></p>
+    </div>
+    <div class="modal-sns modal-contents modal-green" style="display:none;">
+      <h3>SNS</h3>
+      <p class="modal-text modal-sns-text">aaaaa</p>
+      <p><a class="modal-button-close">close</a></p>
+    </div>
+
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Hiramitsu Ryusuke.com</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="">Do for Others.</a>
+            <a class="mdl-navigation__link" href="">about me</a>
+            <a class="mdl-navigation__link" href="">Timeline</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">@A28Rh</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Do for Others.</a>
+          <a class="mdl-navigation__link" href="">about me</a>
+          <a class="mdl-navigation__link" href="">Timeline</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content"><!-- Your content goes here --></div>
+      </main>
+    </div>
+
+    <div id="fullpage">
+      <div class="fullpage">
+          <h1 class="top_title">Do for Others.</h1>
+      </div>
+      <a href="#tile" class="anchor-arrow"><img src="images/arrow.png" class="anchor_image" alt="anchor"></a>
+    </div>
+
+    <div id="secoundpage">
+
+    <section id="do-for-others">
+      <h1 class="secound_title message-title">Do for Others.</h1>
+      <div class="wrapper">
+        <div class="message">
+          <p class="message-contents">
+          Do for Others は "Do for others what you want them to do for you" から引用されたもので「人にしてもらいたいと思うことは何でも、あなたがたも人にしなさい」という「他者への貢献」を意味する言葉です。明治学院大学の教育理念にも掲げられているこの言葉は、僕の大好きな言葉で今もこれからも大切にしていきたい考え方のひとつです。人の気持ちを考える、相手の行動を察する行為は物事の課題解決に直結すると考えています。これから続く何十年、Do for Others の考え方を大切にしていきたいです。（※ 決して宗教チックではありません。）
+          </p>
+        </div>
+      </div>
+    </section>
+    <br>
+
+    <section id="tile">
+      <h1 class="secound_title about_me">about me</h1>
+      <div class="wrapper">
+        <div class="big-items items-container">
+          <div class="col-xs-12 col-sm-12 col-md-6 item">
+            <div class="big-contents">
+              <p>@A28Rh</p>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3 item">
+            <div class="contents green like">
+              <p class="contents-title like-title">Like</p>
+              <div class="like-slide"></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3 item">
+            <div class="contents blue skill">
+              <p class="contents-title skill-title">Skill</p>
+              <div class="skill-slide"></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3 item">
+            <div class="contents orange strength">
+              <p class="contents-title strength-title">Strength</p>
+              <div class="strength-slide"></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3 item">
+            <div class="contents pink character">
+              <p class="contents-title character-title">Character</p>
+              <div class="character-slide"></div>
+            </div>
+          </div>
+        </div>
+        <div class="items-container">
+          <div class="col-xs-6 col-sm-6 col-md-3 item">
+            <div class="contents pink hobby">
+              <p class="contents-title hobby-title">Hobby</p>
+              <div class="hobby-slide"></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3 item">
+            <div class="contents orange dream">
+              <p class="contents-title dream-title">Dream</p>
+              <div class="dream-slide"></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3 item">
+            <div class="contents blue blog">
+              <p class="contents-title blog-title">Blog</p>
+              <div class="blog-slide"></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3 item">
+            <div class="contents green sns">
+              <p class="contents-title sns-title">SNS</p>
+              <div class="sns-slide"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    
+    <section id="timeline">
+      <h1 class="secound_title time_line">Timeline</h1>
+        <section id="cd-timeline" class="cd-container">
+         <div class="cd-timeline-block">
+           <div class="cd-timeline-img cd-picture">
+             <img src="img/cd-icon-picture.svg" alt="Picture">
+             </div> <!-- cd-timeline-img -->
+     
+             <div class="cd-timeline-content">
+               <h2>Title of section 1</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+               <a href="#0" class="cd-read-more">Read more</a>
+               <span class="cd-date">Jan 14</span>
+             </div> <!-- cd-timeline-content -->
+           </div> <!-- cd-timeline-block -->
+     
+           <div class="cd-timeline-block">
+             <div class="cd-timeline-img cd-movie">
+               <img src="img/cd-icon-movie.svg" alt="Movie">
+             </div> <!-- cd-timeline-img -->
+     
+             <div class="cd-timeline-content">
+               <h2>Title of section 2</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+               <a href="#0" class="cd-read-more">Read more</a>
+               <span class="cd-date">Jan 18</span>
+             </div> <!-- cd-timeline-content -->
+           </div> <!-- cd-timeline-block -->
+     
+           <div class="cd-timeline-block">
+             <div class="cd-timeline-img cd-picture">
+               <img src="img/cd-icon-picture.svg" alt="Picture">
+             </div> <!-- cd-timeline-img -->
+     
+             <div class="cd-timeline-content">
+               <h2>Title of section 3</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+               <a href="#0" class="cd-read-more">Read more</a>
+               <span class="cd-date">Jan 24</span>
+             </div> <!-- cd-timeline-content -->
+           </div> <!-- cd-timeline-block -->
+     
+           <div class="cd-timeline-block">
+             <div class="cd-timeline-img cd-location">
+               <img src="img/cd-icon-location.svg" alt="Location">
+             </div> <!-- cd-timeline-img -->
+     
+             <div class="cd-timeline-content">
+               <h2>Title of section 4</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+               <a href="#0" class="cd-read-more">Read more</a>
+               <span class="cd-date">Feb 14</span>
+             </div> <!-- cd-timeline-content -->
+           </div> <!-- cd-timeline-block -->
+     
+           <div class="cd-timeline-block">
+             <div class="cd-timeline-img cd-location">
+               <img src="img/cd-icon-location.svg" alt="Location">
+             </div> <!-- cd-timeline-img -->
+     
+             <div class="cd-timeline-content">
+               <h2>Title of section 5</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+               <a href="#0" class="cd-read-more">Read more</a>
+               <span class="cd-date">Feb 18</span>
+             </div> <!-- cd-timeline-content -->
+           </div> <!-- cd-timeline-block -->
+     
+           <div class="cd-timeline-block">
+             <div class="cd-timeline-img cd-movie">
+               <img src="img/cd-icon-movie.svg" alt="Movie">
+             </div> <!-- cd-timeline-img -->
+     
+             <div class="cd-timeline-content">
+               <h2>Final Section</h2>
+               <p>This is the content of the last section</p>
+               <span class="cd-date">Feb 26</span>
+             </div> <!-- cd-timeline-content -->
+           </div> <!-- cd-timeline-block -->
+         </section> <!-- cd-timeline -->
+    </section>
+  </div>
+    <br>
+
+    <footer class="mdl-mega-footer">
+      <div class="mdl-mega-footer__middle-section">
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <h1 class="mdl-mega-footer__heading">Do for Others.</h1>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">about me</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Like</a></li>
+            <li><a href="#">Skill</a></li>
+            <li><a href="#">Strength</a></li>
+            <li><a href="#">Character</a></li>
+            <li><a href="#">Hobby</a></li>
+            <li><a href="#">Dream</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">SNS</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Timeline</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Patterns</a></li>
+            <li><a href="#">Usage</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contracts</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Contact me</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="mdl-mega-footer__bottom-section">
+        <div class="mdl-logo">Hiramitsu Ryusuke.com</div>
+        <ul class="mdl-mega-footer__link-list">
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy & Terms</a></li>
+        </ul>
+      </div>
+
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,412 @@
+html, body {
+  font-family: sans-selif;
+}
+
+h1 {
+}
+
+h2 {
+  font-size: 3.5vw;
+  margin: 1vw 0px;
+}
+
+.mdl-layout__header {
+  height: 10px;
+  background-color: Transparent;
+  box-shadow: 0 0.8vw 1.5vw rgba(0, 0, 0, 0.5);
+}
+
+body {
+  /*background-color: #0C041C;*/
+  background-color: #f5f5f5;
+}
+
+#fullpage {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/porigon.png");
+  /*background-color: #17202A;*/
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.top_title {
+  margin: 0;
+  position: relative;
+  top: 40vh;
+  color: #f5f5f5;
+  text-align: center;
+  font-size: 5vw;
+}
+
+.anchor_image {
+  max-width: 100%;
+  width: 5vw;
+}
+
+.anchor-arrow {
+  max-width: 100%;
+  width: 5vw;
+  height: 5vw;
+  position: relative;
+  top: 70vh;
+  left: 47vw;
+  z-index: 3;
+}
+
+#secoundpage {
+  margin-right: 6.4vw;
+  margin-left: 6.4vw;
+}
+
+.message {
+  box-shadow: 0 0.8vw 1.5vw rgba(0, 0, 0, 0.5);
+  color: #17202A;
+  background: #f5f5f5;
+  padding: 1vw;
+  margin: 2vw 1vw 1vw 1vw;
+  border-radius: 5px;
+}
+
+.message p {
+  padding: 1.6vw;
+  font-size: 1.25vw;
+  margin: 0px;
+}
+
+.about_me {
+  text-align: center;
+  font-size: 4.5vw;
+  padding: 1.6vw 0px;
+  margin: 1vw;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  color: #17202A;
+  box-shadow: 0 0.4vw 0.4vw rgba(128, 128, 128, 0.5);
+}
+
+.message-title, .time_line {
+  text-align: center;
+  font-size: 4.5vw;
+  padding: 1.6vw 0px;
+  margin: 1vw;
+  border-radius: 5px;
+  background-color: #17202A;
+  color: #f5f5f5;
+  box-shadow: 0 0.8vw 1.5vw rgba(0, 0, 0, 0.5);
+}
+
+#tile {
+  padding: 2.4vw;
+  margin-top: 6.4vw;
+  background-color: #17202A;
+  border-radius: 5px;
+  box-shadow: 0 0.8vw 1.5vw rgba(0, 0, 0, 0.5);
+}
+
+#do-for-others, #timeline {
+  padding: 2.4vw;
+  margin-top: 6.4vw;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  box-shadow: 0 0.8vw 1.5vw rgba(0, 0, 0, 0.5);
+}
+
+.contents {
+  height: 19vw;
+  cursor: pointer;
+  box-shadow: 0 5px 3px rgba(128, 128, 128, 0.5);
+}
+
+.big-contents {
+  height: 40vw;
+  background-image: url("../images/top01.png");
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.big-contents p {
+  z-index: 1;
+  color: #BBBBBB;
+  text-align: center;
+  font-size: 4vw;
+  position: relative;
+  top: 16.5vw;
+  font-weight: bold;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.items-container {
+  overflow: hidden;
+}
+
+div[class^=col] {
+  padding:1vw;
+}
+
+.pink {
+  border-radius: 5px;
+  background-color: #EC407A;
+}
+
+.blue {
+  border-radius: 5px;
+  background-color: #42A5F5;
+}
+
+.green {
+  border-radius: 5px;
+  background-color: #28C694;
+}
+
+.orange {
+  border-radius: 5px;
+  background-color: #FF9800;
+}
+
+.contents-title {
+  position: relative;
+  top: 7vw;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+.contents p {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.like-title {
+  z-index: 1;
+}
+
+.sns-title {
+  z-index: 1;
+}
+
+.skill-title {
+  z-index: 1;
+}
+
+.blog-title {
+  z-index: 1;
+}
+
+.strength-title {
+  z-index: 1;
+}
+
+.hobby-title {
+  z-index: 1;
+}
+
+.character-title {
+  z-index: 1;
+}
+
+.dream-title {
+  z-index: 1;
+}
+
+/*
+.like-slide {
+  position: relative;
+  height: 19vw;
+  background-color: #28C694;
+  top: -4.4vw;
+  width: 0%;
+  border-radius: 5px
+}
+
+.skill-slide {
+  position: relative;
+  height: 19vw;
+  background-color: #35A5E5;
+  top: -4.4vw;
+  width: 0%;
+  border-radius: 5px
+}
+
+.strength-slide {
+  position: relative;
+  height: 19vw;
+  background-color: #F28E4A;
+  top: -4.5vw;
+  width: 0%;
+  border-radius: 5px
+}
+
+.character-slide {
+  position: relative;
+  height: 19vw;
+  background-color: #ff4761;
+  top: -4.5vw;
+  width: 0%;
+  border-radius: 5px
+}
+
+.hobby-slide {
+  position: relative;
+  height: 19vw;
+  background-color: #ff4761;
+  top: -4.5vw;
+  width: 0%;
+  border-radius: 5px
+}
+
+.dream-slide {
+  position: relative;
+  height: 19vw;
+  background-color: #F28E4A;
+  top: -4.5vw;
+  width: 0%;
+  border-radius: 5px
+}
+
+.blog-slide {
+  position: relative;
+  height: 19vw;
+  background-color: #35A5E5;
+  top: -4.5vw;
+  width: 0%;
+  border-radius: 5px
+}
+
+.sns-slide {
+  position: relative;
+  height: 19vw;
+  background-color: #28C694;
+  top: -4.5vw;
+  width: 0%;
+  border-radius: 5px
+}
+*/
+
+/*
+.like:hover .like-title {
+  color: #ffffff;
+}
+
+.skill:hover .skill-title {
+  color: #ffffff;
+}
+
+.strength:hover .strength-title {
+  color: #ffffff;
+}
+
+.character:hover .character-title {
+  color: #ffffff;
+}
+
+.hobby:hover .hobby-title {
+  color: #ffffff;
+}
+
+.dream:hover .dream-title {
+  color: #ffffff;
+}
+
+.blog:hover .blog-title {
+  color: #ffffff;
+}
+
+.sns:hover .sns-title {
+  color: #ffffff;
+}
+*/
+
+#modal-overlay {
+  z-index: 2;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0,0,0,0.95);
+  cursor: pointer;
+}
+
+.modal-contents {
+  z-index: 3;
+  width:80vw;
+  max-height: 80%;
+  border-radius: 5px;
+  background:#fff;
+  position: fixed;
+  text-align: center;
+  top: 5vw;
+  left: 10vw;
+  overflow-y: auto !important;
+}
+
+/*
+.modal-contents h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 1.6vw;
+  padding-bottom: 0.8vw;
+  border-radius: 5px 5px 0px 0px;
+  font-weight: bold;
+  font-size: 3vw;
+  color: #ffffff;
+}
+
+.modal-green h3 {
+  background-color: #28C694;
+}
+
+.modal-blue h3 {
+  background-color: #35A5E5;
+}
+
+.modal-orange h3 {
+  background-color: #F28E4A;
+}
+
+.modal-pink h3 {
+  background-color: #ff4761;
+}
+
+.modal-text {
+  margin-bottom: 0px;
+  padding: 0.8vw 2.4vw;
+  text-align: center;
+}
+
+.modal-button-close {
+  cursor: pointer;
+  margin-bottom: 0px;
+  padding: 0.8vw 2.4vw;
+}
+*/
+
+.modal-like-text img {
+  width: 8vw;
+  margin: 0.8vw 0.8vw;
+}
+
+.like-item {
+  margin: 1.6vw 0px;
+  font-size: 1.09vw;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.wishlist {
+  color: red;
+  font-weight: bold;
+  font-size: 1.6vw;
+}
+
+
